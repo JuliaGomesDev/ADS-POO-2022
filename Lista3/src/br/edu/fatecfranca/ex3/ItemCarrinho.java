@@ -46,9 +46,12 @@ public class ItemCarrinho {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-    
-    public String mostra() {
-        return "ItemCarrinho{" + "codigo=" + codigo + ", qtd=" + qtd + ", valor=" + valor + ", descricao=" + descricao + '}';
+
+    @Override
+    public String toString() {
+        return "\n ItemCarrinho{" + "codigo=" + codigo + ", qtd=" + qtd + ", valor=" + valor + ", descricao=" + descricao + '}';
     }
+    
+
     
 }
